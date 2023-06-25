@@ -1,11 +1,11 @@
-// Mapeamento das unidades de cada categoria
+// utilizando o Array para pegar todas propriedades
 const units = {
     length: ['metros', 'centímetros', 'polegadas'],
     weight: ['quilogramas', 'gramas', 'libras'],
     temperature: ['Celsius', 'Fahrenheit', 'Kelvin']
   };
 
-  // Atualiza as opções das unidades de medida com base na categoria selecionada
+  // Atualiza as opções das unidades de medida de acordo selecionada
   function updateUnitOptions() {
     const category = document.getElementById("category").value;
     const inputUnit = document.getElementById("inputUnit");
@@ -70,6 +70,9 @@ const units = {
       } else if (inputUnit === "polegadas" && outputUnit === "centímetros") {
         result = inputValue * 2.54;
       }
+
+      // abaixo conersão do peso
+
     } else if (document.getElementById("category").value === "weight") {
       if(inputUnit === "quilogramas" && outputUnit === "gramas"){
         result = inputValue * 1000
@@ -84,7 +87,9 @@ const units = {
       } else if(inputUnit === "libras" && outputUnit === "gramas"){
         result = inputValue * 453.6
       }
-      
+
+      // abaixo conversão da temperatura
+
     } else if (document.getElementById("category").value === "temperature") {
     if(inputUnit === "Celsius" && outputUnit === "Fahrenheit") {
       result = (inputValue * 9/5) + 32;

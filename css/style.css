@@ -1,22 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
       font-family: Arial, sans-serif;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    input[type="number"] {
-      width: 150px;
-      padding: 5px;
-    }
-    select {
-      width: 150px;
-      padding: 5px;
-    }
-    button {
-      padding: 5px 10px;
-      margin-top: 10px;
-    }
-    #result {
-      margin-top: 20px;
-    }
+      background:linear-gradient( rgb(95, 9, 145), rgb(4, 39, 83),rgb(95, 9, 145));
+      color: white;
+}
+
+/* fixar as 3 caixas */
+
+section, main,footer
+{
+  height: 20vh;
+}
+
+/* Titulo da pagina */
+
+#titulo{
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* section do forms:para ter um ajuste melhor */
+
+section{
+  background-color: rgb(91, 16, 134);
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* fidildeset: Arrumar o corpo do forms */
+
+fieldset{
+  border: 2px solid;
+  height: 60vh;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* label:escrita do input */
+
+label {
+  display: block;
+  margin-top: 10px;
+  padding: 1px;
+}
+
+/* Input:Local onde se digita o valor */
+
+input[type="number"] {
+  width: 150px;
+  padding: 5px;
+  height: 20px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+
+/* Select: seleçao dos valores */
+
+select
+{ width: 150px;
+  padding: 5px;
+  height: 30px;
+  color: black;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+
+/* buttom:botao:) */
+
+ button {
+  color: white;
+  margin: 10px;
+  height: 30px;
+  padding: 5px 10px;
+  width: 150px;
+  background:linear-gradient(rgb(45, 21, 71),rgb(71, 46, 104) ,rgb(86, 6, 122));
+  border:1px solid black;
+  box-shadow: 2px 2px rgb(36, 36, 36);
+  border-radius: 4px;
+}
+
+button:hover
+{
+  background:linear-gradient(rgb(163, 42, 219),rgb(144, 92, 212) ,rgb(51, 51, 148));
+}
+
+/* O resultado das conversoes */
+
+#result {
+  color: black;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+/* texto do documento, junto com as imagens */
+
+main{
+  font-size: 20px;
+  background-color: blueviolet;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid;
+}
+
+/* imagem */
+
+img{
+  height: 200px;
+}
+
+/* rodape do document */
+
+footer{
+  font-size: 15px;
+  border-top: 2px solid white;
+  padding: 10px;
+  text-align: center;
+  height: 3vh;
+  background-color: rgb(17, 4, 46);
+}

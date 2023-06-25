@@ -7,33 +7,41 @@
   <script src="js/script.js"></script>
 </head>
 </html>
-  <h2>Conversor de Unidades</h2>
+<!-- titulo da pagina -->
+  <h2 id="titulo">Conversor de Unidades</h2>
+  <!-- todo o corpo do formulario da conversor -->
   <section>
-  <form id="converterForm">
-    <label for="inputValue">Valor:</label>
-    <input type="number" id="inputValue" placeholder="Digite o valor" required>
+    <fieldset>
+        <form id="converterForm">
+        <label for="inputValue">Valor:</label>
+        <input type="number" id="inputValue" placeholder="Digite o valor" required>
 
-    <label for="category">Categoria:</label>
-    <select id="category" onchange="updateUnitOptions()">
-      <option value="length">Comprimento</option>
-      <option value="weight">Peso</option>
-      <option value="temperature">Temperatura</option>
-    </select>
+        <label for="category">Categoria:</label>
+        <select id="category" onchange="updateUnitOptions()">
+        <option value="length">Comprimento</option>
+        <option value="weight">Peso</option>
+        <option value="temperature">Temperatura</option>
+        </select>
 
-    <label for="inputUnit">Unidade de Medida de Origem:</label>
-    <select id="inputUnit" onchange="updateOutputUnit()">
-    </select>
+        <label for="inputUnit">Unidade de Medida de Origem:</label>
+        <select id="inputUnit" onchange="updateOutputUnit()">
+        </select>
 
-    <label for="outputUnit">Unidade de Medida de Destino:</label>
-    <select id="outputUnit"></select>
+        <label for="outputUnit">Unidade de Medida de Destino:</label>
+        <select id="outputUnit"></select>
 
-    <button type="submit" onclick="convert(event)">Converter</button>
-  </form>
-  <p id="result"></p>
+        <button type="submit" onclick="convert(event)">Converter</button>
+      </form>
+    <p id="result"></p>
+  </fieldset>
 </section>
-<h1>Sobre o projeto</h1>
+ <!-- texto e imagem do documento -->
+<main>
+<h1 id="titulo">Sobre o projeto</h1>
 <p>Um projeto da Resilia sobre um conversor de unidades, utilizando HTML, CSS e JS.</p>
-<img src="img/titulo.png" alt="Modulo 2 do curso Resilia">
+<img src="img/titulo.png" alt="Conversor de Unidade  JOJO!">
+</main>
+<!-- rodape do documento -->
 <footer>
   @copyright | jojo proenca
 </footer>
