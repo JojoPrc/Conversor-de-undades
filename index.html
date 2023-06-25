@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+</html>
+  <h2>Conversor de Unidades</h2>
+  <section>
+  <form id="converterForm">
+    <label for="inputValue">Valor:</label>
+    <input type="number" id="inputValue" placeholder="Digite o valor" required>
+
+    <label for="category">Categoria:</label>
+    <select id="category" onchange="updateUnitOptions()">
+      <option value="length">Comprimento</option>
+      <option value="weight">Peso</option>
+      <option value="temperature">Temperatura</option>
+    </select>
+
+    <label for="inputUnit">Unidade de Medida de Origem:</label>
+    <select id="inputUnit" onchange="updateOutputUnit()">
+    </select>
+
+    <label for="outputUnit">Unidade de Medida de Destino:</label>
+    <select id="outputUnit"></select>
+
+    <button type="submit" onclick="convert(event)">Converter</button>
+  </form>
+  <p id="result"></p>
+</section>
+<h1>Sobre o projeto</h1>
+<p>Um projeto da Resilia sobre um conversor de unidades, utilizando HTML, CSS e JS.</p>
+<img src="img/titulo.png" alt="Modulo 2 do curso Resilia">
+<footer>
+  @copyright | jojo proenca
+</footer>
+</body>
+</html>
